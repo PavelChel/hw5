@@ -27,15 +27,17 @@ public class Main {
 
         System.out.println(" Домашнее задание 4");
             int deliveryDistance = 95;
-            if (deliveryDistance <= 20) {
-                System.out.printf(" Потребуется один день для доставки");
+            int deliveryDays = 1;
+
+            if (deliveryDistance >20) {
+                deliveryDays++;
             }
-            if (deliveryDistance >20 && deliveryDistance <=60) {
-                System.out.printf(" Потребудется два дня для доставки");
+            if (deliveryDistance >60) {
+                deliveryDays++;
             }
-            if (deliveryDistance >60 && deliveryDistance  <= 100) {
-                System.out.printf(" Потребудется три дня для доставки");
-            }
+        System.out.printf(" Потребуется дней " + deliveryDays);
+
+
 
         System.out.printf(" Домашнее задание 5");
         int monthNumber = 12;
